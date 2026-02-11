@@ -9,7 +9,7 @@ pinned: false
 
 # Pet Ownership Statistics — Jupyter Notebook Dashboard
 
-![Pet Ownership Dashboard](pet_ownership_dashboard.webp)
+![Pet Ownership Dashboard](https://koval-vlad-portfolio.vercel.app/images/pet_dashboard_presentation/Slide11.webp)
 
 Interactive dashboard analyzing U.S. pet ownership by state: cats vs dogs, households, populations, and ownership density. Built in Jupyter with **Panel**, **Plotly**, **Matplotlib**, and **Tabulator**.
 
