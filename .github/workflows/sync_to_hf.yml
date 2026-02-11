@@ -1,0 +1,20 @@
+name: Sync to Hugging Face hub
+on:
+  push:
+    branches: [master]  
+  workflow_dispatch:
+
+jobs:
+  sync-to-hub:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          lfs: true
+      - name: Push to hub
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: |
+          # Use master:main to push GitHub master branch to HF's main branch
+          git push -f https://vlad-koval:$HF_TOKEN@huggingface.co/spaces/vlad-koval/pet-ownership-analysis master:main
